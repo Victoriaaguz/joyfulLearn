@@ -1,0 +1,62 @@
+{
+    "Programs": [
+        {
+            "id": "1",
+            "src": "./img/abc_icon.jpg",
+            "title": "Class 1 - Two's",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+        },
+        {
+            "id": "2", 
+            "src": "./img/butterfly_icon.png",
+            "title": "Class 2 - Young Three's",
+            "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+        
+        },
+        {
+            "id": "3", 
+            "src": "./img/owl_icon.png",
+            "title": "Class 3 - Three's",
+            "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+        },
+        {
+            "id": "4", 
+            "src": "./img/pencil_icon.png",
+            "title": "Class 4 - Pre-Kindergarden",
+            "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+        },
+        {
+            "id": "5", 
+            "src": "./img/light_icon.png",
+            "title": "Class 5 - Advanced Pre-Kindergarden",
+            "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+        }
+    ],
+    "inrichment": [
+        {
+            "id": "1",
+            "src": "./img/pizza_mon.jpg",
+            "title": "Pizza Monday's",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique. Inventore vitae delectus. Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        },
+        {
+            "id": "2",
+            "src": "./img/gym-img.jpg",
+            "title": "Gymnastics",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique. Inventore vitae delectus. Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        },
+        {
+            "id": "3",
+            "src": "./img/dance_img.jpg",
+            "title": "Dance",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique. Inventore vitae delectus. Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        },
+        {
+            "id": "4",
+            "src": "./img/swiming_img.jpg",
+            "title": "Swimming",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique.Inventore vitae delectus. Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        }
+    ]
+
+}

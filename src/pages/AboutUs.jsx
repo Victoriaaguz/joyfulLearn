@@ -4,9 +4,9 @@ import React from "react"
 export default function AboutUs() {
     const gallery = [
     "/img/circleTime.jpg",
-    "/img/dressUp.jpeg",
-    "/img/glueingShapes.jpeg",
-    "/img/reading.jpeg"
+    "/img/dressUp.JPEG",
+    "/img/glueingShapes.JPEG",
+    "/img/reading.JPEG"
     
   ];
     return (

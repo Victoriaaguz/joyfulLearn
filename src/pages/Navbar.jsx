@@ -76,7 +76,7 @@ function Navbar() {
     </li>
     <li>
       <Link
-        to="gallery"
+        to="./Staff"
         smooth={true}
         offset={-70}
         duration={500}

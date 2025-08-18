@@ -7,7 +7,7 @@ function Footer() {
       <div className="footer-link-container">
       <div className="footer-items">
         <p className="footer-description">
-          CCC LIC #
+          CCC LIC # 198021529
           <br/>
           © {new Date().getFullYear()} JoyFullLeraning. All rights reserved.
           </p>

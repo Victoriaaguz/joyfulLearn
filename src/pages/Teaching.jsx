@@ -62,6 +62,28 @@ export default function Teach() {
           </p>
         </article>
       </section>
+      {/* === Add below, before </main> === */}
+
+<section id="curriculum" className="ph-section" aria-label="Curriculum">
+  <h2 className="ph-h2">Curriculum</h2>
+  <ul className="ph-list">
+    <li><strong>Daily rhythm:</strong> arrival & connection, free play (indoor/outdoor), small-group invitations, circle, snack, story, rest.</li>
+    <li><strong>Centers:</strong> dramatic play, blocks/building, art & process media, sensory, early literacy, math, science & nature.</li>
+    <li><strong>Teacher role:</strong> observe, document, scaffold, and extend interests into emergent projects.</li>
+    <li><strong>SEL:</strong> emotion coaching, problem-solving, and community agreements.</li>
+  </ul>
+</section>
+
+<section id="more" className="ph-section" aria-label="More to read">
+  <h2 className="ph-h2">More to read</h2>
+  <ul className="ph-list">
+    <li><a href="#" rel="noreferrer">Empathy & Relationships (placeholder)</a></li>
+    <li><a href="#" rel="noreferrer">Book Selection Philosophy (placeholder)</a></li>
+    <li><a href="#" rel="noreferrer">Child-Led Play (placeholder)</a></li>
+    <li><a href="#" rel="noreferrer">Kindergarten Readiness (placeholder)</a></li>
+  </ul>
+</section>
+
     </main>
   );
 }

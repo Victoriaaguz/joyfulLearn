@@ -14,6 +14,7 @@ p {
     margin: 0;
     font-family: 'Playfair Display', serif;
 }
+html { scroll-padding-top: var(--nav-h); }
 :root{
     --primary: #B1836F;         /* Muted warm brown */
     --heading-color: #6C4F3D;   /* Earthy heading color */
@@ -23,6 +24,7 @@ p {
     --black: #0d0d19;
     --white: #ffffff;
     --cc-nav-h: 88px; /* adjust to your fixed navbar height */
+    --nav-h: 95px;
 }
 .btn{
     font-family: "Roboto";
@@ -145,8 +147,10 @@ h3{
     left: 0;
     right: 0;
     z-index: 9999;
-    height: 95px;
+    height: var(--nav-h);
 } 
+.nav-spacer { height: var(--nav-h); } 
+
 .navbar-items > ul {
     list-style: none;
     display: flex;
@@ -398,12 +402,13 @@ h3{
 /* Hero Page ends */
 /* AboutUs page */
 
-html { scroll-padding-top: var(--cc-nav-h); }
+html { scroll-padding-top: var(--nav-h); }
 
 .about.cc-wrap {
   color: var(--primary);
   background: #fff;
-  padding: calc(var(--cc-nav-h) + clamp(24px, 5vw, 48px)) 16px 64px;
+  padding: clamp(24px, 5vw, 48px) 16px 64px;
+  scroll-margin-top: calc(var(--cc-nav-h) + 12px);
 }
 
 /* Centered, narrow column */
@@ -422,6 +427,7 @@ html { scroll-padding-top: var(--cc-nav-h); }
   line-height: 1.15;
   text-align: left;
   margin: 8px auto 20px;
+  scroll-margin-top: calc(var(--cc-nav-h) + 12px);
 }
 
 /* Body copy */
@@ -497,7 +503,7 @@ html { scroll-padding-top: var(--cc-nav-h); }
 .philosophy.cc-wrap {
   color: var(--primary);
   background: var(--white);
-  padding: calc(var(--cc-nav-h, 88px) + clamp(24px, 5vw, 48px)) 16px 64px;
+  padding: clamp(24px, 5vw, 48px) 16px 64px;
 }
 
 #philosophy-heading { scroll-margin-top: calc(var(--cc-nav-h) + 12px); }
@@ -536,9 +542,53 @@ html { scroll-padding-top: var(--cc-nav-h); }
 
 /* Mobile tweaks */
 @media (max-width: 520px) {
-  .philosophy.cc-wrap { padding: calc(var(--cc-nav-h) + 24px) 12px 48px; }
+  .philosophy.cc-wrap { padding: clamp(24px, 5vw, 48px) 16px 64px; }
 }
 /* tecahing and pilh ends */
+
+/* === Meet the Staff === */
+
+
+.staff-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1.25rem;
+}
+
+.staff-card {
+  grid-column: span 12;
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 1rem;
+  align-items: start;
+  padding: 1rem;
+  border: 1px solid rgba(0,0,0,.06);
+  border-radius: 12px;
+  background: #fff;
+}
+
+.staff-media { width: 140px; }
+.staff-photo {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.staff-name { margin: 0; font-weight: 700; color: var(--heading-color); }
+.staff-role { margin: .15rem 0 .5rem; color: var(--primary); font-weight: 600; }
+.staff-subhead { margin: .75rem 0 .25rem; font-weight: 700; }
+.staff-bio { margin: .25rem 0; }
+.staff-cred li { margin-left: 1rem; }
+
+/* Stack on small screens */
+@media (max-width: 700px) {
+  .staff-card { grid-template-columns: 1fr; }
+  .staff-media { width: 100%; }
+  .staff-photo { height: 220px; }
+}
+/* Staff section ends */
+
 /* Programs section style*/
 .programs-section{
     display: flex;
